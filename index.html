@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación Web Base</title>
+
+    <!-- Fuente original -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Tipografía e identidades originales (Rama Main) */
+        :root {
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --primary-color: #2b5797;
+            --text-color: #333333;
+            --accent-color: #0078d4;
+            --font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: #201f1e;
+            color: #d0d0d0;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Modificaciones para la rama secundaria feature/personalización */
+        /*
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary-color: #06b6d4;
+            --text-color: #f8fafc;
+            --accent-color: #f43f5e;
+            --font-family: 'Poppins', sans-serif;
+        }
+        */
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Tareas Web</h1>
+        <p>Demostración práctica de flujo de Git y GitHub Pages</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Bienvenido a la Aplicación</h2>
+            <p>Esta es una versión base de la interfaz sobre la cual aplicaremos un flujo de control de versiones con ramas y commits.</p>
+            
+            <!-- Elemento Interactivo / Modificable -->
+            <button onclick="alert('¡Hola! Funcionalidad básica ejecutada.')">Haz clic aquí</button>
+        </div>
+
+        <div class="card" id="student-info">
+            <h3>Información del Proyecto</h3>
+            <p>Estado: Versión base (Rama main)</p>
+            <!-- Aquí se agregará el nombre del estudiante en la rama secundaria -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Proyecto de Control de Versiones</p>
+    </footer>
+
+</body>
+</html>
